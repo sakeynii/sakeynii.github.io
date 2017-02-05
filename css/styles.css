@@ -1,0 +1,93 @@
+.bgimage1{
+	//background-image: url('../images/reptiles.jpg');
+	background-position: center;
+	background-size: cover;
+	background-color: #ccc;
+	height: 100px;
+	margin-bottom: 15px;
+}
+
+
+.icon {
+  max-width: 150px;
+  margin: 0 auto;
+  display: block;
+}
+
+.services section {
+  text-align: center;
+}
+.one{
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+@media(max-width: 767px){
+	.img-responsive{
+		max-width: 50%;
+		min-width: 300px;
+	}
+}
+
+.read-more-state{
+	display: none;
+}
+
+.read-more-target{
+	opacity: 0;
+	max-height: 0;
+	font-size: 0;
+	transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap
+.read-more-target{
+	opacity: 1;
+	font-size: inherit;
+	max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before{
+	content: 'Show more';
+}
+
+.read-more-state:checked  ~ .read-more-trigger:before{
+	content: 'Show less';
+}
+
+.read-more-trigger {
+	cursor: pinter;
+	display: inline-black;
+	padding: 0 .5em;
+	color: #666;
+	font-size: .9em;
+	line-height: 2;
+	border: 1px solid #ddd;
+	border-radius: .25em;
+}
+
+/* Other style */
+body {
+	padding: 2%;
+}
+
+p{
+	padding: 2%;
+	//background: #fff9c6;
+	//color: #c7b27e;
+	//border: 1px solid #fce29f;
+	border-radius: .25em;
+}
+
+.services section {
+  text-align: center;
+}
+
+@media(min-width: 1200px){
+	h3{
+		margin-top: 0;
+	}
+	.services section{
+		text-align: left;
+	}
+}
